@@ -1,0 +1,30 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "REST API with nodejs/Express and MongoDB",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "standard --env jest && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federico93/music-app.git"
+  },
+  "author": "Federico Burgardt <feburgardt@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/federico93/music-app/issues"
+  },
+  "homepage": "https://github.com/federico93/music-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1",
+    "standard": "^16.0.3"
+  }
+}
