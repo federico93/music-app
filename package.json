@@ -4,9 +4,9 @@
   "description": "REST API with nodejs/Express and MongoDB",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "test": "standard --env jest && jest"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "standard --env jest && jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,15 @@
   },
   "homepage": "https://github.com/federico93/music-app#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.11",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
     "jest": "^27.0.1",
-    "standard": "^16.0.3"
+    "standard": "^16.0.3",
+    "supertest": "^6.1.3"
   }
 }
